@@ -1,0 +1,712 @@
+body{
+margin:0px;
+
+font:14px/1.5 "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+}
+
+.clearfloat::after{
+    content:"";
+    display:block;
+    clear:both;
+    }
+
+/**topbar*/
+.topbar{
+height:40px;
+background-color:#333;
+
+}
+
+.container{
+width:1226px;
+margin:auto;
+line-height:40px;
+height:40px;
+
+}
+
+.container a{
+text-decoration:none;
+color:#b0b0b0;
+font-size:12px;
+}
+
+.container a:hover{
+color:#fff;
+
+}
+
+.container span{
+font-family:sans-serif;
+color:#424242;
+font-size:12px;
+margin:0.5em;
+}
+
+.topbar-nav{
+float:left;
+height:40px;
+font-size:0px;
+}
+
+.topbar-car{
+float:right;
+height:40px;
+width:120px;
+background-color:#424242;
+}
+
+.topbar-car a{
+display:block;
+height:40px;
+width:120px;
+text-align:center;
+}
+
+.topbar-car a:hover{
+background-color:#fff;
+color:#ff6700;
+
+}
+
+.topbar-car a span{
+margin-left:-4px;
+
+}
+
+.topbar-info{
+float:right;
+font-size:0px;
+margin-right:15px;
+}
+
+.topbar-info a{
+display:block;
+float:left;
+height:40px;
+text-align:center;
+padding:0px 5px; 
+}
+
+.topbar-info span{
+display:block;
+float:left;
+height:40px;
+line-height:40px;
+font-size:12px;
+margin:0px 
+}
+
+/*header*/
+
+.site-header{
+height:118.76px;
+
+}
+
+.header-container{
+width:1226px;
+height:88px;
+margin-left:auto;
+margin-right:auto;
+
+}
+
+.biaoti h1{
+margin:18.76px 0;
+text-align:center;
+
+}
+
+
+.header-logo{
+float:left;
+height:55px;
+width:55px;
+margin:22px 0 0 0;
+padding:0 7px 0 0;
+
+}
+
+.header-logo a{
+display:block;
+width:55px;
+height:55px;
+background-color:#ff6700;
+background-image:url(../img/mi-logo.png);
+background-repeat:no-repeat;
+background-position:center center;
+font-size:0px;
+}
+
+.nav-list{
+float:left;
+
+}
+
+.nav-list ul{
+height:88px;
+width:820px;
+margin:0;
+padding:12px 0 0 30px;
+
+}
+
+.nav-list ul li{
+float:left;
+list-style-type:none;
+margin:0px;
+padding:26px 10px 38px;
+}
+
+.nav-list ul li a{
+
+color:#333;
+text-decoration:none;
+text-align:right;
+font-size:16px;
+}
+
+.nav-list ul li a:hover{
+color:#ff6700;
+
+}
+
+
+/*长宽是指内容盒子的长宽*/
+.nav-list ul li.fenglei{
+width:96px;
+margin:0px;
+padding:26px 15px 38px 31px;
+
+}
+
+/*search*/
+
+.search
+{
+float:right;
+margin-top:25px;
+
+}
+
+.search form{
+position:relative;
+width:296px;
+height:50px;
+
+}
+
+
+
+.search .shuru{
+height:50px;
+width:245px;
+border:1px solid #e0e0e0;
+padding:0 10px 0;
+font-size:14px;
+line-height:48px;
+}
+
+.search .ok{
+height:50px;
+width:52px;
+padding:1px 6px 1px;
+border:1px solid #e0e0e0;
+background-color:#fff;
+position:absolute;
+left:244px;
+
+}
+
+.search .ok:hover{
+background-color:#ff6700;
+
+}
+
+
+/*div当子元素添加了position之后就不会据子div容器而扩容，然而子依然会随父移动*/
+/*
+.one{
+border:1px solid red;
+height:50px;
+width:100px;
+position:fixed;
+top:100px;
+left:240px;
+
+}
+
+.two{
+height:20px;
+width:20px;
+border:1px solid black;
+position:absolute;
+left:100px;
+top:10px;
+}
+*/
+
+/*shangpin*/
+
+.shangpin{
+background-color:#f5f5f5;
+
+}
+
+.shangpin-img{
+background-image:url(../img/seckill-head.jpg);
+background-repeat:no-repeat;
+background-position:center;
+height:170px;
+
+}
+
+.shangpin-container{
+width:1226px;
+margin:-68px auto 22px;
+}
+
+.shangpin-nav,.shangpin-nav ul{
+width:1226px;
+height:68px;
+margin:-68px 0 22px;
+}
+
+.scroll{
+position:fixed;
+top:130px;/*为什么60就看不到？*/
+
+}
+
+.scrollgood{
+display:none;
+width:1226px;
+height:68px;
+
+}
+
+.scrollactive{
+display:block;
+
+}
+
+.shangpin-nav ul{
+height:68px;
+padding:0;
+}
+
+.shangpin-nav li{
+display:block;
+float:left;
+width:20%;
+height:68px;
+line-height:68px;
+text-align:center;
+color:#fff;
+background-color:#414141;
+cursor:pointer;
+
+}
+
+.shangpin-nav .seckill{
+background-color:#f1393a;
+
+}
+
+.shangpin-nav em{
+display:inline-block;
+margin-left:15px;
+line-height:1;
+vertical-align:middle;
+text-align:left;
+font-size:18px;
+font-style:normal;
+}
+
+.shangpin-nav span{
+display:inline-block;
+margin-left:15px;
+line-height:1;
+vertical-align:middle;
+text-align:left;
+font-size:14px;
+
+}
+
+.shangpin-nav ul li span em{
+font-style:normal;
+font-size:14px;
+line-height:20px;
+margin-left:0;
+text-align:left;
+
+}
+
+/*利用样式重叠，交互不变部分使用标签选择器，需要改变部分使用class，这样就可以保证格式不变同时用脚本控制显示等参数*/
+.shangpin-goods ul{
+display:none;
+list-style-type:none;
+margin-right:-13px;
+padding:0;
+}
+
+/*对优先级又有了新的理解···*/
+.shangpin-goods .goods-active{
+display:block;
+}
+
+.shangpin-goods li{
+float:left;
+height:190px;
+width:400px;
+background-color:#fff;
+margin-right:13px;
+margin-bottom:13px;
+}
+
+/*子元素若浮动，最后一个元素没有清除浮动，且父元素没有指定宽高，则浏览器会判定父元素内没内容
+只有一条线*/
+
+
+
+.goods-img{
+float:left;
+width:190px;
+height:190px;
+background-image:url(../img/1.png);
+background-repeat:no-repeat;
+background-size:190px 190px;
+
+}
+
+.goods-info{
+float:right;
+width:190px;
+height:190px;
+padding-top:30px;
+}
+
+/*overflow要在块级父元素设置才有用？*/
+.goods-info{
+overflow:hidden;
+text-overflow:ellipsis;
+}
+
+.goods-info .goods{
+white-space:nowrap;
+font-size:16px;
+line-height:16px;
+color:#333;
+text-decoration:none;
+}
+
+.goods-info .shuoming{
+font-size:12px;
+color:#b0b0b0;
+line-height:12px;
+}
+
+.goods-info .price{
+font-size:16px;
+line-height:16px;
+color:#f1393a;
+margin-top:14px;
+}
+
+.goods-info .price del{
+font-size:12px;
+line-height:12px;
+color:#999;
+margin-left:10px;
+}
+
+.goods-info .tip{
+display:block;
+width:118px;
+height:28px;
+background-color:#f1393a;
+border:1px solid #f1393a;
+text-align:center;
+line-height:28px;
+font-size:14px;
+color:#fff;
+text-decoration:none;
+margin-top:19px;
+}
+
+.goods-info .people{
+font-size:12px;
+line-height:12px;
+color:#999;
+margin-top:10px;
+}
+
+/*如果white-space设置了pre-wrap的话会自动添加html文本之前的缩进！*/
+
+.notic{
+margin-top:100px;
+padding-bottom:35px;
+font-size:12px;
+color:rgba(0,0,0,0.27);
+text-align:left;
+}
+
+/*footer*/
+
+.footer{
+width:1863px;
+height:272px;
+/*为什么这里与shangpin元素会产生20pxd的空格？*/
+margin-top:-20px;
+background-color:#fff;
+
+}
+
+.footer-container{
+width:1226px;
+height:272px;
+margin:0 auto;
+
+}
+
+.footer-service{
+height:25px;
+width:1226px;
+padding:27px 0 27px;
+margin:0px;
+border-bottom:1px solid #e0e0e0;
+}
+
+
+.footer-service ul{
+list-style-type:none;
+width:1226px;
+margin:0;
+padding:0;
+}
+
+.footer-service li{
+display:block;
+float:left;
+width:19.8%;
+height:25px;
+line-height:25px;
+text-align:center;
+border-left:1px solid #e0e0e0;
+}
+
+.footer-service .first{
+    display:block;
+    float:left;
+    width:19.8%;
+    height:25px;
+    line-height:25px;
+    text-align:center;
+    border-left:0px;
+    }
+
+.footer-service li a{
+text-decoration:none;
+margin:auto;
+font-size:16px;
+line-height:16px;
+color:#616161;
+
+}
+
+.footer-service li a:hover,.footer-link a{
+color:#ff6700;
+
+}
+
+.footer-link{
+    height:112px;
+    width:1226px;
+    padding:40px 0 40px;
+    margin:0;
+    
+    
+    }
+
+.footer-link dl{
+display:block;
+float:left;
+width:160px;
+height:112px;
+margin:0px;
+}
+
+.footer-link dl dt{
+margin:-1px 0 26px;
+font-size:14px;
+line-height:1.25;
+color:#424242;
+
+}
+
+.footer-link dl dd{
+margin:10px 0 0;
+line-height:17px;
+}
+
+.footer-link dl dd a{
+font-size:12px;
+text-decoration:none;
+color:#757575;
+}
+
+.footer-link dl dd a:hover{
+color:#ff6700;
+
+}
+
+.call{
+float:right;
+margin:0;
+width:251px;
+height:112px;
+border-left:1px solid #e0e0e0;
+}
+
+.call .phone{
+color:#ff6700;
+font-size:22px;
+line-height:1;
+margin:0 0 5px;
+text-align:center;
+}
+
+.call .date{
+width:251px;
+height:36px;
+margin:0 0 16px;
+font-size:12px;
+line-height:16px;
+color:#616161;
+text-align:center;
+}
+
+.call .kefu{
+display:block;
+margin:0 auto;
+width:118px;
+height:28px;
+border:1px solid #ff6700;
+background-color:#fff;
+color:#ff6700;
+font-size:12px;
+line-height:28px;
+text-decoration:none;
+text-align:center;
+cursor:pointer;
+}
+
+.call .kefu:hover{
+color:#fff;
+background-color:#ff6700;
+
+}
+
+/*site*/
+
+.site-info{
+background-color:#fafafa;
+padding:30px 0 30px;
+}
+
+.site-info-container{
+position:relative;
+width:1226px;
+
+margin:0 auto;
+
+}
+
+.site-logo a{
+display:block;
+font-size:0px;
+position:absolute;
+top:0;
+left:0;
+margin-right:10px;
+width:57px;
+height:57px;
+background-image:url(../img/mi-logo.png);
+background-repeat:no-repeat;
+background-color:#ff6700;
+background-position:center;
+}
+
+.site-text{
+padding-left:67px;
+width:1159px;
+height:91px;
+margin:0;
+}
+
+.site-text .link{
+margin:0;
+font-size:0;
+}
+
+/*设定p这个父元素的样式好像不会被a子元素继承？*/
+.site-text .link a{
+margin:0;
+text-decoration:none;
+font-size:12px;
+line-height:18px;
+color:#757575;
+}
+
+/*只会为网页结构第一个a元素应用样式*/
+.site-text a:hover{
+color:#ff6700;
+}
+
+.site-text .link span{
+font-size:12px;
+font-family:sans-serif;
+line-height:18px;
+color:#757575;
+margin:0.25em;
+}
+
+.site-text .licence{
+margin:0;
+font-size:12px;
+line-height:18px;
+color:#b0b0b0;
+}
+
+.site-text .licence a{
+font-size:12px;
+line-height:18px;
+text-decoration:none;
+color:#b0b0b0;
+}
+
+.site-text .licence a:hover{
+color:#ff6700;
+}
+
+.site-img{
+margin:4px 0 0;
+padding-left:67px;
+height:28px;
+}
+
+.site-img img{
+height:28px;
+margin-left:0;  
+}
+
+/*却slogen图片*/
+.slogen{
+background-color:#fafafa;
+margin-top:30px;
+width:267px;
+height:19px;
+margin-right:auto;
+margin-left:auto;
+}
